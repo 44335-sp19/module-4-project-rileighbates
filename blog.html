@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lighthouse Island Bistro</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="lighthouse.css">
@@ -37,7 +42,9 @@
 			//Step 3: Set and id called "blogline" on the "aside" tag. 
 			//Change the text on the aside element to say "March Madness wrap now available!"
 
-			
+			document.getElementById("blogline").innerHTML = "March Madness wrap now available!";
+            
+            
 			
 					
 			
@@ -45,12 +52,14 @@
 			
 			
 			
-			//Step 4: Change the h3 tags to be italic
-			
-			
-			
-			
-			
+//Step 4: Change the h3 tags to be italic
+
+       var tag = document.getElementsByTagName('h3');
+       for (var i = 0; i < tag.length; i++) {
+           
+           tag[i].style.fontStyle = "italic";
+       }
+       
 			
 			
 			
